@@ -269,3 +269,14 @@ h1, h2{
         text-align: center;
     }
 }
+
+@media (max-width: 430px){
+    .lista-menu a{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .lista-menu{
+        width: 95%;
+    }
+}
