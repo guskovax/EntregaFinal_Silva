@@ -155,8 +155,14 @@ h1, h2{
 
 /*Preguntas frecuentes*/
 .faqs{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+}
+
+
+.faqs p, h2{
+    font-weight: bold;
+    text-align: left;
 }
 
 
@@ -169,7 +175,7 @@ h1, h2{
     margin: 10px auto;
 }
 
-.formulario p{
+.formulario label{
     color: white;
 }
 
@@ -257,5 +263,9 @@ h1, h2{
     .categoria-producto img{
         width: 70px;
         height: 70px;
+    }
+
+    .faqs p, h2{
+        text-align: center;
     }
 }
