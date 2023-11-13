@@ -1,0 +1,261 @@
+/*Reset de estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Estilos generales*/
+
+body{
+    background-color: #35363A;
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+/*Comienza el header*/
+.header{
+    width: 100%;
+    background-color: #11111F;
+}
+
+.horarios{
+    width: 100%;
+    height: auto;
+    background-color: #C1A01E;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.lista-menu{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lista-menu{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.lista-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lista-menu li:hover{
+    transform: scale(1.05);
+}
+
+.lista-menu a:hover{
+    color: #C1A01E;
+}
+
+
+/*Index*/
+
+.marcas-favoritas{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+
+}
+
+.marca-favorita img{
+    width: 35vw;
+    height: auto;
+}
+
+.marca-favorita{
+    transition: 0.3s;
+}
+.marca-favorita:hover{
+    transform: scale(1.05);
+}
+
+.categorias{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoria-producto{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.categoria-producto img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/*Sucursales*/
+.sucursales{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.sucursal{
+    text-align: center;
+    width: 30%;
+    height: 33vh;
+    color: white;
+}
+
+.sucursal iframe{
+    width: 100%;
+    height: 90%;
+}
+
+
+/*Marcas*/
+.container-marcas{
+    width: 90%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    transition: 0.3s;
+}
+
+.marca:hover{
+    transform: scale(1.05);
+}
+
+.marca img{
+    width: 100%;
+    height: auto;
+}
+
+/*Preguntas frecuentes*/
+.faqs{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*Contacto*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 10px auto;
+}
+
+.formulario p{
+    color: white;
+}
+
+.btn-form{
+    width: 30%;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    background-color: #C1A01E;
+    border-radius: 10px;
+}
+
+.btn-form:hover{
+    
+    background-color: #b99a1c;
+
+}
+
+/*Comienza el footer*/
+.footer{
+    text-align: center;
+    min-height: 180px;
+    width: 100%;
+    background-color: #11111F;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 90%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer{
+    max-width: 50%;
+    height: auto;
+    max-height: 80%;
+}
+
+
+.rrss{
+    list-style: none;
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    color: #C1A01E;
+}
+
+.footer{
+    margin-top: 15px;
+}
+
+
+
+/*Media Queries*/
+@media (max-width: 550px){
+    .lista-menu a{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .lista-menu{
+        width: 90%;
+    }
+
+    .formulario{
+        width: 50%;
+    }
+
+    .categoria-producto img{
+        width: 70px;
+        height: 70px;
+    }
+}
