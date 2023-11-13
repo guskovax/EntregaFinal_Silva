@@ -171,13 +171,17 @@ h1, h2{
     text-align: left;
 }
 
+.pregunta{
+    margin: 25px 0;
+}
+
 
 /*Contacto*/
 
 .formulario{
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 45%;
     margin: 10px auto;
 }
 
@@ -263,7 +267,7 @@ h1, h2{
     }
 
     .formulario{
-        width: 50%;
+        width: 60%;
     }
 
     .categoria-producto img{
@@ -271,7 +275,11 @@ h1, h2{
         height: 70px;
     }
 
-    .faqs p, h2{
+    .faqs p{
+        text-align: left;
+    }
+
+    .faqs h2{
         text-align: center;
     }
 
