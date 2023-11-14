@@ -12,6 +12,13 @@ ul {
     margin: 0;
 }
 
+p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
 /*Estilos generales*/
 
 body{
