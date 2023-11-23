@@ -45,6 +45,7 @@ h1, h2{
 .header{
     width: 100%;
     background-color: #11111F;
+    margin-bottom: 15px;
 }
 
 .horarios{
@@ -276,7 +277,7 @@ h1, h2{
     }
 
     .carousel-item img{
-        height: 40vh;
+        height: 35vh;
     }
 
     .categorias{
