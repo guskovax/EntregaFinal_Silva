@@ -182,7 +182,9 @@ h1, h2{
 }
 
 .pregunta{
-    margin: 25px 0 35px;
+    margin: 25px 0;
+    background-color: #11111F;
+    padding: 15px 5px;
 }
 
 
@@ -200,19 +202,10 @@ h1, h2{
 }
 
 .btn-form{
-    width: 30%;
-    height: 2rem;
-    color: white;
-    font-weight: bold;
     background-color: #C1A01E;
-    border-radius: 10px;
+    color: white;
 }
 
-.btn-form:hover{
-    
-    background-color: #b99a1c;
-
-}
 
 /*Comienza el footer*/
 .footer{
