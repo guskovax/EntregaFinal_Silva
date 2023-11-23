@@ -97,23 +97,14 @@ h1, h2{
 
 /*Index*/
 
-.marcas-favoritas{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px auto;
-    padding-bottom: 5px;
+.carousel{
+    width: 85%;
+    margin: 15px auto;
+
 }
 
-.marca-favorita img{
-    width: 35vw;
-    height: auto;
-}
-
-.marca-favorita{
-    transition: 0.3s;
-}
-.marca-favorita:hover{
-    transform: scale(1.05);
+.carousel-item img{
+    height: 80vh;
 }
 
 .categorias{
@@ -131,8 +122,8 @@ h1, h2{
 }
 
 .categoria-producto img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
@@ -186,10 +177,11 @@ h1, h2{
 .faqs p, .faqs h2{
     font-weight: bold;
     text-align: left;
+    color: white;
 }
 
 .pregunta{
-    margin: 25px 0;
+    margin: 25px 0 35px;
 }
 
 
@@ -283,8 +275,8 @@ h1, h2{
         width: 90%;
     }
 
-    .marca-favorita img{
-        width: 45vw;
+    .carousel-item img{
+        height: 40vh;
     }
 
     .categorias{
@@ -328,7 +320,7 @@ h1, h2{
     }
 
     .container-marcas{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
