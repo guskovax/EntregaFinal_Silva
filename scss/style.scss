@@ -68,50 +68,39 @@ h1, h2{
             max-width: 100%;
         }
     }
-
-
+    .lista-menu{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        list-style: none;
+        transition: 0.3s;
+        li{
+            &:hover{
+                transform: scale(1.05);
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                &:hover{
+                    color: $color-principal;
+                }
+            }
+        }
+    }
 }
-
-
-.lista-menu{
-    width: 80%;
-    margin: 0 auto;
-}
-
-.lista-menu{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    list-style: none;
-    transition: 0.3s;
-}
-
-.lista-menu a{
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.lista-menu li:hover{
-    transform: scale(1.05);
-}
-
-.lista-menu a:hover{
-    color: $color-principal;
-}
-
 
 /*Index*/
 
 .carousel{
     width: 85%;
     margin: 15px auto;
-
-}
-
-.carousel-item img{
-    height: 80vh;
+    .carousel-item img{
+        height: 80vh;
+    }
 }
 
 .categorias{
@@ -119,19 +108,16 @@ h1, h2{
     margin: 10px auto;
     display: flex;
     justify-content: space-around;
-}
-
-.categoria-producto{
-    color: white;
-    text-align: center;
-    font-weight: bold;
-
-}
-
-.categoria-producto img{
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
+    .categoria-producto{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        img{
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+    }
 }
 
 /*Sucursales*/
@@ -140,20 +126,17 @@ h1, h2{
     justify-content: space-around;
     width: 100%;
     margin: 15px auto;
+    .sucursal{
+        text-align: center;
+        width: 30%;
+        height: 33vh;
+        color: white;
+        iframe{
+            width: 100%;
+            height: 90%;
+        }
+    }
 }
-
-.sucursal{
-    text-align: center;
-    width: 30%;
-    height: 33vh;
-    color: white;
-}
-
-.sucursal iframe{
-    width: 100%;
-    height: 90%;
-}
-
 
 /*Marcas*/
 .container-marcas{
@@ -163,36 +146,32 @@ h1, h2{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
     transition: 0.3s;
-}
-
-.marca:hover{
-    transform: scale(1.05);
-}
-
-.marca img{
-    width: 100%;
-    height: auto;
+    .marca{
+        &:hover{
+            transform: scale(1.05);
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 /*Preguntas frecuentes*/
 .faqs{
     width: 80%;
     margin: 0 auto;
+    .pregunta{
+        margin: 25px 0;
+        background-color: $color-fondo-oscuro;
+        padding: 15px 5px;
+        p, h2{
+            font-weight: bold;
+            text-align: left;
+            color: white;
+        }
+    }
 }
-
-
-.faqs p, .faqs h2{
-    font-weight: bold;
-    text-align: left;
-    color: white;
-}
-
-.pregunta{
-    margin: 25px 0;
-    background-color: $color-fondo-oscuro;
-    padding: 15px 5px;
-}
-
 
 /*Contacto*/
 
@@ -201,17 +180,10 @@ h1, h2{
     flex-direction: column;
     width: 45%;
     margin: 10px auto;
+    label{
+        color: white;
+    }
 }
-
-.formulario label{
-    color: white;
-}
-
-.btn-form{
-    background-color: $color-principal;
-    color: white;
-}
-
 
 /*Comienza el footer*/
 .footer{
@@ -221,58 +193,45 @@ h1, h2{
     background-color: $color-fondo-oscuro;
     display: flex;
     justify-content: center;
-}
-
-.footer-container{
-    width: 90%;
-    height: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-footer{
-    max-width: 50%;
-    height: auto;
-    max-height: 80%;
-}
-
-
-.rrss{
-    list-style: none;
-    display: flex;
-    color: white;
-    text-align: center;
-}
-
-.footer ul{
-    list-style: none;
-}
-
-.footer a{
-    text-decoration: none;
-    color: white;
-}
-
-.footer a:hover{
-    color: $color-principal;
-}
-
-.footer{
     margin-top: 20px;
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: $color-principal;
+        }
+    }
+    .footer-container{
+        width: 90%;
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo-footer{
+            max-width: 50%;
+            height: auto;
+            max-height: 80%;
+        }
+        .rrss{
+            list-style: none;
+            display: flex;
+            color: white;
+            text-align: center;
+        }
+    }
 }
-
-
 
 /*Media Queries*/
 @media (max-width: 550px){
-    .lista-menu a{
-        font-size: 20px;
-        font-weight: 500;
-    }
-
     .lista-menu{
         width: 90%;
+        a{
+            font-size: 20px;
+            font-weight: 500;
+        }
     }
 
     .carousel-item img{
@@ -289,11 +248,10 @@ h1, h2{
 
     .categoria-producto{
         font-weight: 500;
-    }
-
-    .categoria-producto img{
-        width: 65px;
-        height: 65px;
+        img{
+            width: 65px;
+            height: 65px;
+        }
     }
 
     .faqs p{
@@ -309,14 +267,13 @@ h1, h2{
         flex-direction: column;
         width: 100%;
         margin: 15px auto;
-    }
-    
-    .sucursal{
-        text-align: center;
-        margin: 10px auto;
-        width: 90%;
-        height: auto;
-        color: white;
+        .sucursal{
+            text-align: center;
+            margin: 10px auto;
+            width: 90%;
+            height: auto;
+            color: white;
+        }
     }
 
     .container-marcas{
@@ -325,21 +282,19 @@ h1, h2{
 }
 
 @media (max-width: 430px){
-    .lista-menu a{
-        font-size: 18px;
-        font-weight: 500;
-    }
-
     .lista-menu{
         width: 95%;
+        a{
+            font-size: 18px;
+            font-weight: 500;
+        }
     }
 
     .categorias p{
         font-size: 12px;
-    }
-
-    .categoria-producto img{
-        width: 60px;
-        height: 60px;
+        .categoria-producto img{
+            width: 60px;
+            height: 60px;
+        }
     }
 }

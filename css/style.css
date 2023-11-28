@@ -46,8 +46,7 @@ h1, h2 {
   background-color: #11111F;
   margin-bottom: 15px;
 }
-
-.horarios {
+.header .horarios {
   width: 100%;
   height: auto;
   background-color: #C1A01E;
@@ -55,42 +54,33 @@ h1, h2 {
   text-align: center;
   font-weight: bold;
 }
-
-.logo {
+.header .logo {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
-.logo img {
+.header .logo img {
   max-width: 100%;
 }
-
-.lista-menu {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.lista-menu {
+.header .lista-menu {
   display: flex;
   justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
   padding-bottom: 10px;
   list-style: none;
   transition: 0.3s;
 }
-
-.lista-menu a {
+.header .lista-menu li:hover {
+  transform: scale(1.05);
+}
+.header .lista-menu li a {
   text-decoration: none;
   color: white;
   font-size: 24px;
   font-weight: bold;
 }
-
-.lista-menu li:hover {
-  transform: scale(1.05);
-}
-
-.lista-menu a:hover {
+.header .lista-menu li a:hover {
   color: #C1A01E;
 }
 
@@ -99,8 +89,7 @@ h1, h2 {
   width: 85%;
   margin: 15px auto;
 }
-
-.carousel-item img {
+.carousel .carousel-item img {
   height: 80vh;
 }
 
@@ -110,14 +99,12 @@ h1, h2 {
   display: flex;
   justify-content: space-around;
 }
-
-.categoria-producto {
+.categorias .categoria-producto {
   color: white;
   text-align: center;
   font-weight: bold;
 }
-
-.categoria-producto img {
+.categorias .categoria-producto img {
   width: 150px;
   height: 150px;
   cursor: pointer;
@@ -130,15 +117,13 @@ h1, h2 {
   width: 100%;
   margin: 15px auto;
 }
-
-.sucursal {
+.sucursales .sucursal {
   text-align: center;
   width: 30%;
   height: 33vh;
   color: white;
 }
-
-.sucursal iframe {
+.sucursales .sucursal iframe {
   width: 100%;
   height: 90%;
 }
@@ -152,12 +137,10 @@ h1, h2 {
   grid-gap: 1em;
   transition: 0.3s;
 }
-
-.marca:hover {
+.container-marcas .marca:hover {
   transform: scale(1.05);
 }
-
-.marca img {
+.container-marcas .marca img {
   width: 100%;
   height: auto;
 }
@@ -167,17 +150,15 @@ h1, h2 {
   width: 80%;
   margin: 0 auto;
 }
-
-.faqs p, .faqs h2 {
-  font-weight: bold;
-  text-align: left;
-  color: white;
-}
-
-.pregunta {
+.faqs .pregunta {
   margin: 25px 0;
   background-color: #11111F;
   padding: 15px 5px;
+}
+.faqs .pregunta p, .faqs .pregunta h2 {
+  font-weight: bold;
+  text-align: left;
+  color: white;
 }
 
 /*Contacto*/
@@ -187,13 +168,7 @@ h1, h2 {
   width: 45%;
   margin: 10px auto;
 }
-
 .formulario label {
-  color: white;
-}
-
-.btn-form {
-  background-color: #C1A01E;
   color: white;
 }
 
@@ -205,54 +180,45 @@ h1, h2 {
   background-color: #11111F;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
-
-.footer-container {
+.footer ul {
+  list-style: none;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: #C1A01E;
+}
+.footer .footer-container {
   width: 90%;
   height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo-footer {
+.footer .footer-container .logo-footer {
   max-width: 50%;
   height: auto;
   max-height: 80%;
 }
-
-.rrss {
+.footer .footer-container .rrss {
   list-style: none;
   display: flex;
   color: white;
   text-align: center;
 }
 
-.footer ul {
-  list-style: none;
-}
-
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer a:hover {
-  color: #C1A01E;
-}
-
-.footer {
-  margin-top: 20px;
-}
-
 /*Media Queries*/
 @media (max-width: 550px) {
+  .lista-menu {
+    width: 90%;
+  }
   .lista-menu a {
     font-size: 20px;
     font-weight: 500;
-  }
-  .lista-menu {
-    width: 90%;
   }
   .carousel-item img {
     height: 35vh;
@@ -282,7 +248,7 @@ h1, h2 {
     width: 100%;
     margin: 15px auto;
   }
-  .sucursal {
+  .sucursales .sucursal {
     text-align: center;
     margin: 10px auto;
     width: 90%;
@@ -294,17 +260,17 @@ h1, h2 {
   }
 }
 @media (max-width: 430px) {
+  .lista-menu {
+    width: 95%;
+  }
   .lista-menu a {
     font-size: 18px;
     font-weight: 500;
   }
-  .lista-menu {
-    width: 95%;
-  }
   .categorias p {
     font-size: 12px;
   }
-  .categoria-producto img {
+  .categorias p .categoria-producto img {
     width: 60px;
     height: 60px;
   }
