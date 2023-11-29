@@ -213,33 +213,33 @@ h1, h2 {
 
 /*Media Queries*/
 @media (max-width: 550px) {
-  .lista-menu {
+  .carousel .carousel-item img {
+    height: 35vh;
+  }
+  .header .lista-menu {
     width: 90%;
   }
-  .lista-menu li a {
+  .header .lista-menu li a {
     font-size: 20px;
     font-weight: 500;
-  }
-  .carousel-item img {
-    height: 35vh;
   }
   .categorias {
     width: 95%;
   }
-  .formulario {
-    width: 65%;
-  }
-  .categoria-producto {
+  .categorias .categoria-producto {
     font-weight: 500;
   }
-  .categoria-producto img {
+  .categorias .categoria-producto img {
     width: 65px;
     height: 65px;
   }
-  .faqs p {
+  .formulario {
+    width: 65%;
+  }
+  .faqs .pregunta p {
     text-align: left;
   }
-  .faqs h2 {
+  .faqs .pregunta h2 {
     text-align: center;
   }
   .sucursales {
@@ -260,20 +260,18 @@ h1, h2 {
   }
 }
 @media (max-width: 430px) {
-  .lista-menu {
+  .header .lista-menu {
     width: 95%;
   }
-  .lista-menu li a {
+  .header .lista-menu li a {
     font-size: 18px;
     font-weight: 500;
   }
-  .categorias p {
-    font-size: 12px;
-  }
-  .categorias p .categoria-producto img {
+  .categorias .categoria-producto img {
     width: 60px;
     height: 60px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+  .categorias .categoria-producto p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */

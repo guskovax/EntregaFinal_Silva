@@ -3,8 +3,10 @@
 .carousel{
     width: 85%;
     margin: 15px auto;
-    .carousel-item img{
-        height: 80vh;
+    .carousel-item{
+        img{
+            height: 80vh;
+        }
     }
 }
 
