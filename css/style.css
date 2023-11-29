@@ -129,7 +129,7 @@ h1, h2 {
   margin: 15px auto;
 }
 .carousel .carousel-item img {
-  height: 80vh;
+  aspect-ratio: 16/9;
 }
 
 .categorias {
@@ -213,9 +213,6 @@ h1, h2 {
 
 /*Media Queries*/
 @media (max-width: 550px) {
-  .carousel .carousel-item img {
-    height: 35vh;
-  }
   .header .lista-menu {
     width: 90%;
   }
