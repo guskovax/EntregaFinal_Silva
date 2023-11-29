@@ -1,0 +1,26 @@
+/*Index*/
+
+.carousel{
+    width: 85%;
+    margin: 15px auto;
+    .carousel-item img{
+        height: 80vh;
+    }
+}
+
+.categorias{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    .categoria-producto{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        img{
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+    }
+}

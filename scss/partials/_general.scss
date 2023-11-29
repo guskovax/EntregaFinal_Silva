@@ -1,0 +1,97 @@
+/*Estilos generales*/
+
+body{
+    background-color: $color-fondo;
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+/*Comienza el header*/
+.header{
+    width: 100%;
+    background-color: $color-fondo-oscuro;
+    margin-bottom: 15px;
+    .horarios{
+        width: 100%;
+        height: auto;
+        background-color: $color-principal;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        img{
+            max-width: 100%;
+        }
+    }
+    .lista-menu{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        list-style: none;
+        transition: 0.3s;
+        li{
+            &:hover{
+                transform: scale(1.05);
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                &:hover{
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+}
+
+/*Comienza el footer*/
+.footer{
+    text-align: center;
+    min-height: 180px;
+    width: 100%;
+    background-color: $color-fondo-oscuro;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: $color-principal;
+        }
+    }
+    .footer-container{
+        width: 90%;
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo-footer{
+            max-width: 50%;
+            height: auto;
+            max-height: 80%;
+        }
+        .rrss{
+            list-style: none;
+            display: flex;
+            color: white;
+            text-align: center;
+        }
+    }
+}

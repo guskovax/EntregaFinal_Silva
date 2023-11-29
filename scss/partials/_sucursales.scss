@@ -1,0 +1,17 @@
+/*Sucursales*/
+.sucursales{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 15px auto;
+    .sucursal{
+        text-align: center;
+        width: 30%;
+        height: 33vh;
+        color: white;
+        iframe{
+            width: 100%;
+            height: 90%;
+        }
+    }
+}

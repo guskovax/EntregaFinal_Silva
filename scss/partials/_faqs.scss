@@ -1,0 +1,15 @@
+/*Preguntas frecuentes*/
+.faqs{
+    width: 80%;
+    margin: 0 auto;
+    .pregunta{
+        margin: 25px 0;
+        background-color: $color-fondo-oscuro;
+        padding: 15px 5px;
+        p, h2{
+            font-weight: bold;
+            text-align: left;
+            color: white;
+        }
+    }
+}
