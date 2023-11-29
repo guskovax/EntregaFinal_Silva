@@ -94,22 +94,22 @@ h1, h2 {
   justify-content: center;
   margin-top: 20px;
 }
-.footer ul {
-  list-style: none;
-}
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-.footer a:hover {
-  color: #C1A01E;
-}
 .footer .footer-container {
   width: 90%;
   height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer .footer-container ul {
+  list-style: none;
+}
+.footer .footer-container ul a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footer-container ul a:hover {
+  color: #C1A01E;
 }
 .footer .footer-container .logo-footer {
   max-width: 50%;
