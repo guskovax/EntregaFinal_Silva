@@ -83,6 +83,9 @@ h1, h2 {
 .header .lista-menu li a:hover {
   color: #C1A01E;
 }
+.header .lista-menu li .activo {
+  color: #C1A01E;
+}
 
 /*Comienza el footer*/
 .footer {
