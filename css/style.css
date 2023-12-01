@@ -132,6 +132,7 @@ h1, h2 {
   margin: 15px auto;
 }
 .carousel .carousel-item img {
+  max-height: 90vh;
   aspect-ratio: 16/9;
 }
 
