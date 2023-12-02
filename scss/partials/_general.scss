@@ -11,6 +11,10 @@ h1, h2{
     margin: 10px auto;
 }
 
+.activo{
+    color: $color-principal !important; /*Resalta la pagina en la que nos encontramos*/
+}
+
 /*Comienza el header*/
 .header{
     width: 100%;
@@ -52,9 +56,6 @@ h1, h2{
                 &:hover{
                     color: $color-principal;
                 }
-            }
-            .activo{
-                color: $color-principal;
             }
             
         }

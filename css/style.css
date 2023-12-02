@@ -40,6 +40,10 @@ h1, h2 {
   margin: 10px auto;
 }
 
+.activo {
+  color: #C1A01E !important; /*Resalta la pagina en la que nos encontramos*/
+}
+
 /*Comienza el header*/
 .header {
   width: 100%;
@@ -81,9 +85,6 @@ h1, h2 {
   font-weight: bold;
 }
 .header .lista-menu li a:hover {
-  color: #C1A01E;
-}
-.header .lista-menu li .activo {
   color: #C1A01E;
 }
 
