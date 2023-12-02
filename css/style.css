@@ -40,8 +40,9 @@ h1, h2 {
   margin: 10px auto;
 }
 
-.activo {
-  color: #C1A01E !important; /*Resalta la pagina en la que nos encontramos*/
+.header .lista-menu .activo,
+.footer .enlaces .activo {
+  color: #C1A01E; /*Resalta la pagina en la que nos encontramos*/
 }
 
 /*Comienza el header*/

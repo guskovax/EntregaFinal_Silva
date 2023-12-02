@@ -11,8 +11,9 @@ h1, h2{
     margin: 10px auto;
 }
 
-.activo{
-    color: $color-principal !important; /*Resalta la pagina en la que nos encontramos*/
+.header .lista-menu .activo,
+.footer .enlaces .activo {
+    color: $color-principal; /*Resalta la pagina en la que nos encontramos*/
 }
 
 /*Comienza el header*/
